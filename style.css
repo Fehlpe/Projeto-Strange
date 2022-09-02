@@ -8,7 +8,7 @@ body{
 }
 
 #cartoon{
-    background-image: linear-gradient(to top, #ffa700, #ab0c0c);
+    background-image: url("images/360_F_118451908_PamYeslLwOjFNag4CMcEFLmyK7LIXvdm.jpeg");
     max-width: 100%;
     max-height: 100%;
     display: flex;
@@ -23,6 +23,7 @@ body{
     height: 60vh;
     width: 40vw;
     margin-left: 1vw;
+    mix-blend-mode: luminosity;
 }
 
 #strange-cartoon img{
@@ -49,7 +50,7 @@ body{
     transform: translateY(-67.5%);
     width: 80vw;
     height: 65vh;
-    mix-blend-mode: soft-light;
+    mix-blend-mode: darken;
 }
 
 
