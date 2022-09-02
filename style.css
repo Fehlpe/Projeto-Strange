@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+#cartoon{
+    background-image: linear-gradient(to top, #ffa700, #ab0c0c);
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#strange-cartoon{
+    transform: translateY(20%);
+    z-index: 2;
+    height: 70vh;
+    width: 50vw;
+    margin-left: 5vw;
+}
+
+#strange-cartoon img{
+    width: 100%;
+}
+
+#titulo-cartoon{
+    transform: translateY(-80%);
+    width: 80vw;
+    height: 65vh;
+    mix-blend-mode: soft-light;
+}
+
+
+#titulo-cartoon img{
+    width: 100%;
+    height: 100%;
+}
