@@ -18,19 +18,35 @@ body{
 }
 
 #strange-cartoon{
-    transform: translateY(20%);
+    transform: translateY(33%);
     z-index: 2;
-    height: 70vh;
-    width: 50vw;
-    margin-left: 5vw;
+    height: 60vh;
+    width: 40vw;
+    margin-left: 1vw;
 }
 
 #strange-cartoon img{
     width: 100%;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
 }
 
 #titulo-cartoon{
-    transform: translateY(-80%);
+    transform: translateY(-67.5%);
     width: 80vw;
     height: 65vh;
     mix-blend-mode: soft-light;
