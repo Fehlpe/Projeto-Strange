@@ -34,15 +34,15 @@ body{
 @keyframes float {
     0% {
         
-        transform: translatey(0px);
+        transform: translatey(0rem);
     }
 
     50% {
-        transform: translatey(-20px);
+        transform: translatey(-2rem);
     }
 
     100% {
-        transform: translatey(0px);
+        transform: translatey(0rem);
     }
 }
 
@@ -50,9 +50,8 @@ body{
     transform: translateY(-67.5%);
     width: 80vw;
     height: 65vh;
-    mix-blend-mode: darken;
+    mix-blend-mode: multiply;
 }
-
 
 #titulo-cartoon img{
     width: 100%;
