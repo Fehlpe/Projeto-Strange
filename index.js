@@ -20,6 +20,7 @@ imgStrange1.addEventListener('click', (e) => {
 
 imgStrange2.addEventListener("click", (e) => {
     var audio = new Audio('images/tema.m4a');
+    audio.volume = 0.050
     audio.play();
     cartoon.classList.toggle('fade');
     setTimeout(mostrarTela2, 1000);
