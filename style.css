@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Antonio', sans-serif;
 }
 
 body{
-    background-color: black;
+    background-color: rgb(10, 10, 10);
+    overflow: hidden;
 }
 
 #cartoon{
@@ -37,26 +41,30 @@ body{
     animation: float 6s ease-in-out infinite;
 }
 
-@keyframes float {
-    0% {
-        
-        transform: translatey(0rem);
-    }
+    @keyframes float {
+        0% {
+            
+            transform: translatey(0rem);
+        }
 
-    50% {
-        transform: translatey(-2rem);
-    }
+        50% {
+            transform: translatey(-2rem);
+        }
 
-    100% {
-        transform: translatey(0rem);
+        100% {
+            transform: translatey(0rem);
+        }
     }
-}
 
 #titulo-cartoon{
     transform: translateY(-50%);
     width: 80vw;
     height: 65vh;
     mix-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #titulo-cartoon img{
@@ -64,17 +72,62 @@ body{
     height: 100%;
 }
 
+#titulo-cartoon p{
+    transform: translateY(175%);
+    font-size: 3rem;
+}
+
 #paginaLancamento{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateY(-100%);
+    opacity: 0;
+    background-image: url("images/fundo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity 1s ease;
+}
+
+#paginaLancamento.show {
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#paginaLancamento p{
+    transform: translateY(700%);
+    color: bisque;
+    font-size: 2rem;
+}
+
+#paginaLancamento img{
+    width: 30%;
+    transform: translateY(100%);
+}
+
+#paginaLancamento2{
     display: none;
     width: 100%;
     height: 100%;
     position: absolute;
     transform: translateY(-100%);
+    opacity: 1;
 }
 
-#paginaLancamento img{
-    max-width: 100%;
-    max-height: 100%;
+#paginaLancamento2.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#paginaLancamento2 img{
+    max-width: 25%;
+    max-height: 25%;
 }
 
 #img1{
@@ -83,7 +136,8 @@ body{
     -ms-animation:rotateH 12s linear infinite;
     animation:rotateH 12s linear infinite;
     position: relative;
-    top: 100%;
+    top: 22.5%;
+    left: 4.25%;
     filter: drop-shadow(1px 1px 3px rgb(255, 60, 0)) 
     drop-shadow(1px 1px 5px rgb(180, 55, 17));
     opacity: 0;
@@ -91,7 +145,7 @@ body{
 }
 
 #img1.show{
-    opacity: 1;
+    opacity: 2;
 }
 
 #img2{
@@ -103,10 +157,13 @@ body{
     drop-shadow(1px 1px 5px rgb(180, 55, 17));
     opacity: 0;
     transition: opacity 2s ease;
+    position: relative;
+    top: -2.5%;
+    left: 4.25%;
 }
 
 #img2.show {
-    opacity: 1;
+    opacity: 2;
 }
 
 #img3{
@@ -115,7 +172,8 @@ body{
     -ms-animation:rotateH 16s linear infinite;
     animation:rotateH 16s linear infinite;
     position: relative;
-    top: -100%;
+    top: -27.5%;
+    left: 4.25%;
     filter: drop-shadow(1px 1px 3px rgb(255, 60, 0)) 
     drop-shadow(1px 1px 3px rgb(180, 55, 17));
     opacity: 0;
@@ -123,15 +181,7 @@ body{
 }
 
 #img3.show {
-    opacity: 1;
-}
-
-#paginaLancamento.show{
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    opacity: 2;
 }
 
     @-webkit-keyframes rotateH {
